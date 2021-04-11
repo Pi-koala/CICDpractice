@@ -24,11 +24,11 @@ jobs:
       steps:
         - name: Checkout repo
           uses: actions/checkout@v1
-        - name: Upload artifact 
-          uses: acttions/upload-artifact@V1
+          
+        - name: Upload a Build Artifact
+          uses: actions/upload-artifact@v2.2.3
           with: 
-            name: linux
-            path: ./${{env.FILE_NAME}}
+             path: ./${{env.FILE_NAME}}
 
 
 
